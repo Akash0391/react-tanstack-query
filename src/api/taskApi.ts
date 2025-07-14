@@ -1,7 +1,7 @@
-const API_URL = 'https://jsonplaceholder.typicode.com/todos?_limit=5';
+const API_URL = 'https://jsonplaceholder.typicode.com/todos';
 
-export const fetchTasks = async () => {
-  const response = await fetch(API_URL);
+export const fetchTasks = async () => { 
+  const response = await fetch(API_URL);  
   return response.json();
 };
 
